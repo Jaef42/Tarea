@@ -1,0 +1,123 @@
+section{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #34386b;
+  width: 100%;
+  color: #61bcbe;;
+  
+}
+p{
+    font-size: 25px;
+    
+}
+span{
+    font-size: 15px;
+}
+input{
+    border-radius: 10px;
+    border: 3px solid #39c;
+    outline: none;
+    transition: font-size 2s ease-in-out;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  gap: 2px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  
+  align-items: center;
+  gap: 0;
+}
+
+.bin-top {
+  transform-origin: bottom right;
+}
+.button:hover .bin-top {
+  transition-duration: 0.5s;
+  transform: rotate(160deg);
+}
+.button1 {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(255, 69, 69);
+  background-color: rgb(255, 69, 69);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+}
+
+.button1, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button1 .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button1 .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color:rgb(255, 69, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button1:hover {
+  background: rgb(255, 69, 69);
+}
+
+.button1:hover .button__text {
+  color: transparent;
+}
+
+.button1:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button1:active .button__icon {
+  background-color: rgb(255, 69, 69);
+}
+
+.button1:active {
+  border: 1px solid rgb(255, 69, 69);
+}

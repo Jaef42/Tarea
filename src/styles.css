@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    background-color: #34386b;
+    color: #61bcbe;
+    
+}
+h1{
+    text-align: center;
+}
